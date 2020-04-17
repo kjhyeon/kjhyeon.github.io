@@ -97,26 +97,26 @@ author:
   avatar           : "/assets/images/profile_img.jpg"
   bio              : "개발을 공부하고 있는 학생입니다."
   location         : "South Korea"
-  email            : "kjhyeon00@gmail.com"
+  email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
       url: mailto:kjhyeon@gmail.com
     - label: Website
       icon: fas fa-fw fa-link
-      url: https://kjhyeon.github.io
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      # url: https://kjhyeon.github.io
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      # url: https://twitter.com/
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kjhyeon"
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/kjhyeon
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
