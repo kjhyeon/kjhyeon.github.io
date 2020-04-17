@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "J Dev Blog"
+title                    : "Dev J"
 title_separator          : "-"
 subtitle                 : "For Me, For Us" # site tagline that appears below site title in masthead
 name                     : "JEONG-HYEON KIM"
@@ -96,12 +96,12 @@ author:
   name             : "JEONG-HYEON KIM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발을 공부하고 있는 학생입니다."
-  location         : "Suwon, Korea"
+  location         : "Korea"
   email            : "kjhyeon00@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      # url: mailto:kjhyeon@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
