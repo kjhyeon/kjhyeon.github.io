@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "JEONG-HYEON KIM"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/profile_img.jpg"
   bio              : "개발을 공부하고 있는 학생입니다."
   location         : "South Korea"
   email            : "kjhyeon00@gmail.com"
