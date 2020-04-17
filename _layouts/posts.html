@@ -1,29 +1,63 @@
----
-layout: archive
----
-
-{{ content }}
-
-<ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in postsInYear %}
-    <li>
-      <a href="#{{ year.name }}">
-        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-      </a>
-    </li>
-  {% endfor %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 12.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px AppleMyungjo; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px AppleMyungjo; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    span.s3 {text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 12.0px Symbol; text-decoration: underline ; font-kerning: none}
+    span.s5 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s6 {font: 12.0px Times; font-kerning: none}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: archive --- {{ content }}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s2"></span><span class="s1">{% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %} {% for year in postsInYear %}</span></li>
+  <li class="li2"><span class="s2"><b></b></span><span class="s3"><b>{{ year.name }}</b> {{ year.items | size }}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
 </ul>
-
-{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-{% for year in postsByYear %}
-  <section id="{{ year.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ year.name }}</h2>
-    <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for post in year.items %}
-        {% include archive-single.html type=page.entries_layout %}
-      {% endfor %}
-    </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-  </section>
-{% endfor %}
+<p class="p1"><span class="s1">{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %} {% for year in postsByYear %}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{ year.name }}</b></span></h2>
+<p class="p1"><span class="s1">{% for post in year.items %} {% include archive-single.html type=page.entries_layout %} {% endfor %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s3">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} </span><span class="s4">↑</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">{% </span><span class="s1">if page.comments %}</span></p>
+<p class="p5"><span class="s1">&lt;div id="disqus_thread"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1">&lt;script&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">/**</span></p>
+<p class="p5"><span class="s1">*<span class="Apple-converted-space">  </span>RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.</span></p>
+<p class="p5"><span class="s1">*<span class="Apple-converted-space">  </span>LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/</span></p>
+<p class="p5"><span class="s1">/*</span></p>
+<p class="p5"><span class="s1">var disqus_config = function () {</span></p>
+<p class="p5"><span class="s1">this.page.url = PAGE_URL;<span class="Apple-converted-space">  </span>// Replace PAGE_URL with your page's canonical URL variable</span></p>
+<p class="p5"><span class="s1">this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable</span></p>
+<p class="p5"><span class="s1">};</span></p>
+<p class="p5"><span class="s1">*/</span></p>
+<p class="p5"><span class="s1">(function() { // DON'T EDIT BELOW THIS LINE</span></p>
+<p class="p5"><span class="s1">var d = document, s = d.createElement('script');</span></p>
+<p class="p5"><span class="s1">s.src = 'https://kjhyeon.disqus.com/embed.js';</span></p>
+<p class="p5"><span class="s1">s.setAttribute('data-timestamp', +new Date());</span></p>
+<p class="p5"><span class="s1">(d.head || d.body).appendChild(s);</span></p>
+<p class="p5"><span class="s1">})();</span></p>
+<p class="p5"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p5"><span class="s1">&lt;noscript&gt;Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p5"><span class="s1">{% endif %}</span></p>
+</body>
+</html>
